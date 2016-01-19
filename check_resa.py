@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 import json
 import requests
+
 r = requests.get('https://module.lafourchette.com/fr_FR/resa/pick-date/10889-d34ca/54499')
 c = json.loads(r.text)
 availableDateList = c['availableDateList']
